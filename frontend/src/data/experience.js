@@ -1,61 +1,73 @@
 export const experience = [
   {
-    year: "2023 — Present",
-    role: "Senior Frontend Engineer",
-    company: "Confidential — Series C fintech",
-    location: "Remote",
+    year: "Mar 2023 — Nov 2025",
+    role: "Frontend Developer",
+    company: "Mysense Technologies Pvt. Ltd.",
+    location: "Mohali, IN",
     summary:
-      "Leading the frontend for a real-time observability product used by 12k engineers. Built the design system, owned performance, mentored four engineers.",
+      "Developed scalable frontend interfaces using React.js and modern JavaScript. Collaborated with designers and backend teams to ship responsive, high-performance web applications while improving UI consistency across the product.",
   },
   {
-    year: "2021 — 2023",
-    role: "Frontend Architect",
-    company: "Voyage Travel Co.",
-    location: "Bengaluru, IN",
+    year: "Feb 2021 — Dec 2022",
+    role: "UI Developer",
+    company: "Netpyx Solution",
+    location: "Mohali, IN",
     summary:
-      "Rebuilt the consumer booking flow on Next.js, introduced Framer Motion across the product, and grew the frontend team from two to seven engineers.",
+      "Built responsive websites and interactive UI components while optimising performance and SEO. Redesigned several platforms to improve usability and increase user engagement across devices.",
   },
   {
-    year: "2019 — 2021",
-    role: "Frontend Engineer",
-    company: "North Studio",
-    location: "Chandigarh, IN",
+    year: "Oct 2017 — Feb 2021",
+    role: "Web Designer",
+    company: "Rudra Innovative Pvt. Ltd.",
+    location: "Mohali, IN",
     summary:
-      "Shipped marketing sites and editorial experiences for indie publishers, hospitality brands, and a handful of luxury houses you would recognise.",
+      "Designed and implemented responsive websites while collaborating with development teams to deliver user-friendly interfaces grounded in modern UI/UX practice.",
+  },
+];
+
+export const education = [
+  {
+    degree: "MCA — Computer Applications",
+    school: "Lovely Professional University",
+    year: "2019",
+    score: "6.6 / 10",
   },
   {
-    year: "2018 — 2019",
-    role: "Web Developer",
-    company: "Freelance",
-    location: "Chandigarh, IN",
-    summary:
-      "Built end-to-end web products for early-stage founders. Learned how to ship under constraint, write copy, and read a Figma file three ways at once.",
+    degree: "BCA — Computer Applications",
+    school: "Himachal Pradesh University",
+    year: "2015",
+    score: "60%",
   },
 ];
 
 export const expertise = [
   {
-    category: "Languages",
-    items: ["TypeScript", "JavaScript (ES2024)", "HTML5", "CSS / Sass"],
+    category: "Core",
+    items: ["React.js", "Next.js", "TypeScript", "JavaScript (ES2024)"],
   },
   {
-    category: "Frameworks",
-    items: ["React 19", "Next.js (App Router)", "Remix", "Astro"],
+    category: "Markup & Styling",
+    items: ["HTML5", "CSS3 / Sass", "Tailwind CSS", "Material UI", "Bootstrap"],
   },
   {
-    category: "Styling & Motion",
-    items: ["Tailwind CSS", "Framer Motion", "GSAP", "Lenis", "Radix UI"],
-  },
-  {
-    category: "State & Data",
-    items: ["TanStack Query", "Zustand", "GraphQL", "REST", "WebSockets"],
+    category: "Data & Animation",
+    items: ["GraphQL", "Axios", "REST APIs", "GSAP", "Framer Motion"],
   },
   {
     category: "Tooling",
-    items: ["Vite", "Turborepo", "Storybook", "Playwright", "Vitest"],
+    items: ["Git / GitHub", "Figma", "Jira", "ESLint", "Vite"],
+  },
+  {
+    category: "Practice",
+    items: [
+      "Responsive Design",
+      "Web Accessibility",
+      "Performance Optimisation",
+      "Component-driven Dev",
+    ],
   },
   {
     category: "Adjacent",
-    items: ["Node.js", "Edge runtimes", "Figma", "Design tokens", "A11y"],
+    items: ["Node.js", "Express", "MongoDB", "WordPress", "Adobe Suite"],
   },
 ];

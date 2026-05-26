@@ -47,7 +47,20 @@ export default function CaseStudy() {
             <Detail label="Client" value={project.client} />
             <Detail label="Role" value={project.role} />
             <Detail label="Year" value={project.year} />
+            <Detail label="Duration" value={project.duration} />
             <Detail label="Stack" value={project.stack.join(" · ")} />
+            {project.liveUrl && (
+              <a
+                href={project.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-[0.22em] text-foreground hover:opacity-70 transition-opacity pt-2"
+                data-testid="case-live-link"
+              >
+                <span className="link-editorial">Visit live site</span>
+                <span aria-hidden>↗</span>
+              </a>
+            )}
           </div>
         </div>
       </section>

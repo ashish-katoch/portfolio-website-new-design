@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { ArrowUp } from "lucide-react";
 
 const SOCIAL = [
-  { label: "GitHub", href: "https://github.com/", testid: "footer-github" },
-  { label: "LinkedIn", href: "https://linkedin.com/", testid: "footer-linkedin" },
-  { label: "X (Twitter)", href: "https://x.com/", testid: "footer-twitter" },
-  { label: "Read.cv", href: "https://read.cv/", testid: "footer-readcv" },
+  { label: "GitHub", href: "https://github.com/ashish-katoch", testid: "footer-github" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/ashishkatoch/", testid: "footer-linkedin" },
+  { label: "Behance", href: "https://www.behance.net/ashish-katoch", testid: "footer-behance" },
+  { label: "Instagram", href: "https://www.instagram.com/reclusekatoch/", testid: "footer-instagram" },
 ];
 
 export function Footer() {
@@ -31,18 +31,18 @@ export function Footer() {
       <div className="container-editorial py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12">
           <div className="md:col-span-6">
-            <p className="overline mb-5">— Available for select work · 2026</p>
+            <p className="overline mb-5">— Open to work · 2026</p>
             <h2 className="font-serif text-3xl md:text-5xl tracking-tight leading-[1.05] text-balance">
               Let&apos;s build something
               <br />
               quietly remarkable.
             </h2>
             <a
-              href="mailto:hello@ashishkatoch.dev"
+              href="mailto:ashishkatoch7113@hotmail.com"
               className="link-editorial mt-6 inline-block font-serif italic text-xl md:text-2xl text-foreground/90"
               data-testid="footer-email-link"
             >
-              hello@ashishkatoch.dev
+              ashishkatoch7113@hotmail.com
             </a>
           </div>
 
@@ -67,7 +67,7 @@ export function Footer() {
 
           <div className="md:col-span-3">
             <p className="overline mb-4">Coordinates</p>
-            <p className="text-base text-foreground/80">Chandigarh, India</p>
+            <p className="text-base text-foreground/80">Mohali, India</p>
             <p className="text-base text-muted-foreground font-mono tracking-tight mt-1">
               {time || "—"} IST <span className="blink">▍</span>
             </p>
@@ -85,7 +85,7 @@ export function Footer() {
 
         <div className="mt-16 pt-8 border-t border-border/60 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
           <p>© {new Date().getFullYear()} Ashish Katoch. All rights reserved.</p>
-          <p>Designed &amp; built in Chandigarh — set in Playfair Display &amp; Outfit.</p>
+          <p>Designed &amp; built in Mohali — set in Playfair Display &amp; Outfit.</p>
         </div>
       </div>
     </footer>

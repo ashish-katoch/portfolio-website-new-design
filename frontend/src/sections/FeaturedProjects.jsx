@@ -11,9 +11,9 @@ export function FeaturedProjects() {
         <Reveal>
           <div className="grid grid-cols-12 gap-6 mb-12 md:mb-20 items-end">
             <div className="col-span-12 md:col-span-8">
-              <p className="overline mb-4">— Selected Work, 2022 — 2025</p>
+              <p className="overline mb-4">— Selected Work, 2021 — 2025</p>
               <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.02]">
-                Five projects, <span className="italic">honestly</span> told.
+                Six clients, <span className="italic">honestly</span> told.
               </h2>
             </div>
             <div className="col-span-12 md:col-span-4">

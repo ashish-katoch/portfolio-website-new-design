@@ -1,11 +1,18 @@
 import { motion } from "framer-motion";
 import { Reveal } from "../components/Reveal";
+import { education } from "../data/experience";
 
 const PRINCIPLES = [
-  { n: "01", t: "Editorial first", d: "Type and grid lead. Decoration earns its place." },
-  { n: "02", t: "Motion as information", d: "If it moves, it should mean something." },
-  { n: "03", t: "Performance is a feature", d: "Slow products are ugly products." },
-  { n: "04", t: "Accessible by default", d: "WCAG AA is the floor, not the ceiling." },
+  { n: "01", t: "Pixel-perfect UI", d: "Designs translate into clean, faithful components — every time." },
+  { n: "02", t: "Component-driven", d: "Composable, reusable, and friendly to the next engineer in the file." },
+  { n: "03", t: "Performance is a feature", d: "Bundle size, render budgets and tab-order all earn their place." },
+  { n: "04", t: "Accessible by default", d: "WCAG AA is the floor — the keyboard works, the screen reader works." },
+];
+
+const STATS = [
+  { v: "8+", l: "Years experience" },
+  { v: "70+", l: "Projects delivered" },
+  { v: "40%", l: "Avg. UX improvement" },
 ];
 
 export function About() {
@@ -28,26 +35,79 @@ export function About() {
 
           <Reveal delay={0.1} className="col-span-12 md:col-span-6 md:col-start-7 space-y-5 text-base md:text-lg text-foreground/85 leading-relaxed">
             <p>
-              I&apos;m Ashish — a frontend web developer based in Chandigarh, India.
-              For the last seven years I&apos;ve built interfaces for fintech, travel,
-              media and luxury brands; sometimes leading teams, often coding alone,
-              always typesetting headings far too carefully.
+              I&apos;m Ashish — a frontend developer based in Mohali, India, with
+              eight years of building modern, scalable web applications. My
+              background in UI design pairs with frontend engineering so that
+              complex designs become clean, performant interfaces.
             </p>
             <p>
-              I care about the boring parts. Bundle size. Render budgets.
-              Tab order. The hover state at 3am when nobody&apos;s looking. The
-              difference between a button that compiles and a button that{" "}
-              <span className="italic font-serif">feels right</span>.
+              I specialise in <span className="italic font-serif">React.js</span>{" "}
+              and <span className="italic font-serif">Next.js</span>, with strong
+              fundamentals in HTML5, CSS3, JavaScript, TypeScript and modern
+              styling frameworks like Tailwind CSS and Material UI. My day-to-day
+              is component-driven development, responsive design, accessibility,
+              and maintainable frontend architecture.
             </p>
             <p>
-              When I&apos;m not in a code editor I&apos;m usually reading editorial
-              design archives or hiking the foothills of the Himalayas.
+              I enjoy collaborating with cross-functional teams to deliver
+              products that balance performance, usability and visual quality
+              across every device and browser.
             </p>
           </Reveal>
         </div>
 
-        {/* Principles grid */}
-        <div className="mt-20 md:mt-28 grid grid-cols-1 md:grid-cols-4 gap-px bg-border/60 border border-border/60">
+        {/* Stats */}
+        <div className="mt-20 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-px bg-border/60 border border-border/60">
+          {STATS.map((s, i) => (
+            <motion.div
+              key={s.l}
+              initial={{ opacity: 0, y: 16 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-80px" }}
+              transition={{ delay: i * 0.08, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+              className="bg-background p-8 md:p-10"
+              data-testid={`stat-${i}`}
+            >
+              <p className="font-serif text-5xl md:text-7xl tracking-tight leading-none">
+                {s.v}
+              </p>
+              <p className="overline mt-4">{s.l}</p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Education */}
+        <div className="mt-20 md:mt-24 grid grid-cols-12 gap-6">
+          <Reveal className="col-span-12 md:col-span-4">
+            <p className="overline mb-4">— Education</p>
+            <h3 className="font-serif text-3xl md:text-4xl tracking-tight leading-tight">
+              Trained in
+              <br />
+              <span className="italic">computer applications.</span>
+            </h3>
+          </Reveal>
+          <div className="col-span-12 md:col-span-7 md:col-start-6 space-y-6">
+            {education.map((e, i) => (
+              <Reveal key={e.degree} delay={0.05 * i}>
+                <div className="grid grid-cols-12 gap-4 py-5 border-b border-border/60 items-baseline">
+                  <p className="col-span-12 md:col-span-3 font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+                    {e.year}
+                  </p>
+                  <div className="col-span-12 md:col-span-6">
+                    <p className="font-serif text-xl md:text-2xl">{e.degree}</p>
+                    <p className="text-sm text-foreground/70 mt-1">{e.school}</p>
+                  </div>
+                  <p className="col-span-12 md:col-span-3 md:text-right font-mono text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+                    {e.score}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+
+        {/* Principles */}
+        <div className="mt-24 md:mt-28 grid grid-cols-1 md:grid-cols-4 gap-px bg-border/60 border border-border/60">
           {PRINCIPLES.map((p, i) => (
             <motion.div
               key={p.n}

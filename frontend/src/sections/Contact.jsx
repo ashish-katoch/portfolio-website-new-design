@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Reveal } from "../components/Reveal";
 import { ArrowUpRight } from "lucide-react";
 
-const EMAIL = "hello@ashishkatoch.dev";
+const EMAIL = "ashishkatoch7113@hotmail.com";
+const PHONE = "+91-8699314112";
 
 export function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });

@@ -49,7 +49,7 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="col-span-12 md:col-span-3 overline md:text-right mt-2 md:mt-0"
             >
-              Chandigarh · 30.7°N 76.7°E
+              Mohali · 30.7°N 76.7°E
             </motion.div>
           </div>
 
@@ -76,9 +76,10 @@ export function Hero() {
             >
               <p className="overline mb-3">— The work</p>
               <p className="text-pretty text-lg md:text-xl text-foreground/85 leading-snug font-light max-w-md">
-                Frontend web developer crafting{" "}
-                <span className="italic font-serif">quietly remarkable</span> interfaces
-                — editorial, performant, and built to last.
+                Frontend developer with{" "}
+                <span className="italic font-serif">8+ years</span> building
+                responsive, scalable web applications in React.js and Next.js — a
+                background in UI design baked in.
               </p>
             </motion.div>
 
@@ -90,9 +91,10 @@ export function Hero() {
             >
               <p className="overline mb-3">— Currently</p>
               <p className="text-pretty text-lg md:text-xl text-foreground/85 leading-snug font-light max-w-md">
-                Leading frontend at a Series&nbsp;C fintech. Available for select{" "}
-                <span className="italic font-serif">product</span> and{" "}
-                <span className="italic font-serif">studio</span> engagements.
+                Most recently at{" "}
+                <span className="italic font-serif">Mysense Technologies</span>.
+                Available for full-time roles and select{" "}
+                <span className="italic font-serif">freelance</span> engagements.
               </p>
             </motion.div>
           </div>

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
@@ -16,6 +16,8 @@ const NAV = [
 export function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -23,6 +25,15 @@ export function Nav() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const goToSection = (id) => {
+    if (location.pathname === "/") {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else {
+      navigate(`/?section=${id}`);
+    }
+  };
 
   return (
     <>
@@ -54,12 +65,8 @@ export function Nav() {
                 data-testid={`nav-link-${item.label.toLowerCase()}`}
                 onClick={(e) => {
                   if (item.to.startsWith("/#")) {
-                    const id = item.to.slice(2);
-                    const el = document.getElementById(id);
-                    if (el) {
-                      e.preventDefault();
-                      el.scrollIntoView({ behavior: "smooth", block: "start" });
-                    }
+                    e.preventDefault();
+                    goToSection(item.to.slice(2));
                   }
                 }}
               >
@@ -138,15 +145,8 @@ export function Nav() {
                   onClick={(e) => {
                     setOpen(false);
                     if (item.to.startsWith("/#")) {
-                      const id = item.to.slice(2);
-                      const el = document.getElementById(id);
-                      if (el) {
-                        e.preventDefault();
-                        setTimeout(
-                          () => el.scrollIntoView({ behavior: "smooth", block: "start" }),
-                          250
-                        );
-                      }
+                      e.preventDefault();
+                      setTimeout(() => goToSection(item.to.slice(2)), 280);
                     }
                   }}
                   data-testid={`mobile-nav-link-${item.label.toLowerCase()}`}

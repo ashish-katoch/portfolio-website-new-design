@@ -5,7 +5,6 @@ const SOCIAL = [
   { label: "GitHub", href: "https://github.com/ashish-katoch", testid: "footer-github" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/ashishkatoch/", testid: "footer-linkedin" },
   { label: "Behance", href: "https://www.behance.net/ashish-katoch", testid: "footer-behance" },
-  { label: "Instagram", href: "https://www.instagram.com/reclusekatoch/", testid: "footer-instagram" },
 ];
 
 export function Footer() {

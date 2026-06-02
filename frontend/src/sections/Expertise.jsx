@@ -27,7 +27,7 @@ export function Expertise() {
             <div className="col-span-12 md:col-span-5">
               <p className="overline mb-4">— Expertise</p>
               <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.02]">
-                Seven years.
+                Eight years.
                 <br />
                 <span className="italic">One discipline.</span>
               </h2>

@@ -91,10 +91,10 @@ export function Hero() {
             >
               <p className="overline mb-3">— Currently</p>
               <p className="text-pretty text-lg md:text-xl text-foreground/85 leading-snug font-light max-w-md">
-                Most recently at{" "}
-                <span className="italic font-serif">Mysense Technologies</span>.
-                Available for full-time roles and select{" "}
-                <span className="italic font-serif">freelance</span> engagements.
+                Working as an{" "}
+                <span className="italic font-serif">independent freelancer</span>{" "}
+                since December 2025. Available for full-time roles and select
+                product engagements.
               </p>
             </motion.div>
           </div>

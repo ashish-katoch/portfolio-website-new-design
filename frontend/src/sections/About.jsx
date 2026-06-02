@@ -35,10 +35,11 @@ export function About() {
 
           <Reveal delay={0.1} className="col-span-12 md:col-span-6 md:col-start-7 space-y-5 text-base md:text-lg text-foreground/85 leading-relaxed">
             <p>
-              I&apos;m Ashish — a frontend developer based in Mohali, India, with
-              eight years of building modern, scalable web applications. My
-              background in UI design pairs with frontend engineering so that
-              complex designs become clean, performant interfaces.
+              I&apos;m Ashish — a frontend developer based in Mohali, India, with{" "}
+              <span className="italic font-serif">8+ years</span> of building
+              modern, scalable web applications. My background in UI design pairs
+              with frontend engineering so that complex designs become clean,
+              performant interfaces.
             </p>
             <p>
               I specialise in <span className="italic font-serif">React.js</span>{" "}

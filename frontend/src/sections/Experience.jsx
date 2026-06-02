@@ -12,7 +12,7 @@ export function Experience() {
         <Reveal>
           <div className="grid grid-cols-12 gap-6 mb-16 md:mb-20">
             <div className="col-span-12 md:col-span-6">
-              <p className="overline mb-4">— Experience, 2017 — Present</p>
+              <p className="overline mb-4">— Experience, 2017 — Present · 8+ years</p>
               <h2 className="font-serif text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-[1.02]">
                 The trajectory,
                 <br />

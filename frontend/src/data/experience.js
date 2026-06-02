@@ -1,5 +1,13 @@
 export const experience = [
   {
+    year: "Dec 2025 — Present",
+    role: "Freelance Frontend Developer",
+    company: "Independent",
+    location: "Mohali, IN · Remote",
+    summary:
+      "Partnering with product teams and studios on React.js and Next.js engagements — shipping responsive, accessible, performant interfaces across e-commerce, marketing and product surfaces.",
+  },
+  {
     year: "Mar 2023 — Nov 2025",
     role: "Frontend Developer",
     company: "Mysense Technologies Pvt. Ltd.",
